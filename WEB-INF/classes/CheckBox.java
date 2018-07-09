@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,11 +17,11 @@ public class CheckBox extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		// ÉèÖÃÏìÓ¦ÄÚÈÝÀàÐÍ
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		response.setContentType("text/html;charset=UTF-8");
 
 		PrintWriter out = response.getWriter();
-		String title = "¶ÁÈ¡¸´Ñ¡¿òÊý¾Ý";
+		String title = "ï¿½ï¿½È¡ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 		String docType = "<!DOCTYPE html> \n";
 			out.println(docType +
 	            "<html>\n" +
@@ -28,17 +29,17 @@ public class CheckBox extends HttpServlet {
 	            "<body bgcolor=\"#f0f0f0\">\n" +
 	            "<h1 align=\"center\">" + title + "</h1>\n" +
 	            "<ul>\n" +
-	            "  <li><b>²ËÄñ°´½Ì³Ì±êÊ¶£º</b>: "
+	            "  <li><b>ï¿½ï¿½ï¿½ñ°´½Ì³Ì±ï¿½Ê¶ï¿½ï¿½</b>: "
 	            + request.getParameter("runoob") + "\n" +
-	            "  <li><b>Google ±êÊ¶£º</b>: "
+	            "  <li><b>Google ï¿½ï¿½Ê¶ï¿½ï¿½</b>: "
 	            + request.getParameter("google") + "\n" +
-	            "  <li><b>ÌÔ±¦±êÊ¶£º</b>: "
+	            "  <li><b>ï¿½Ô±ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½</b>: "
 	            + request.getParameter("taobao") + "\n" +
 	            "</ul>\n" +
 	            "</body></html>");
 	}
 	
-	// ´¦Àí POST ·½·¨ÇëÇóµÄ·½·¨
+	// ï¿½ï¿½ï¿½ï¿½ POST ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
