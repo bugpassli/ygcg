@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+ <web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0" 
+  metadata-complete="true">
+
+  <display-name>YGCG</display-name>
+  <welcome-file-list>
+     <welcome-file>kitch.jsp</welcome-file>
+  </welcome-file-list>
+
+ <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+
+   
+ <servlet>
+    <servlet-name>HelloForm</servlet-name>
+    <servlet-class>HelloForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloForm</servlet-name>
+    <url-pattern>/HelloForm</url-pattern>
+  </servlet-mapping>
+ 
+<servlet>
+    <servlet-name>CheckBox</servlet-name>
+    <servlet-class>CheckBox</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckBox</servlet-name>
+    <url-pattern>/CheckBox</url-pattern>
+  </servlet-mapping>
+
+
+                    <servlet>
+    <servlet-name>showError</servlet-name>
+    <servlet-class>showError</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showError</servlet-name>
+    <url-pattern>/showError</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <servlet-name>ReadCookies</servlet-name>
+    <servlet-class>ReadCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadCookies</servlet-name>
+    <url-pattern>/ReadCookies</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteCookies</servlet-name>
+    <servlet-class>DeleteCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCookies</servlet-name>
+    <url-pattern>/DeleteCookies</url-pattern>
+  </servlet-mapping>
+
+     <servlet>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <servlet-class>DatabaseAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseAccess</servlet-name>
+    <url-pattern>/DatabaseAccess</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertDataBase</servlet-name>
+        <servlet-class>InsertDataBase</servlet-class>
+    </servlet>
+
+       
+        <servlet-mapping>
+        <servlet-name>InsertDataBase</servlet-name>
+        <url-pattern>/InsertDataBase</url-pattern>
+      </servlet-mapping>
+ 
+ <servlet>
+        <servlet-name>CheckDataBase</servlet-name>
+        <servlet-class>CheckDataBase</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckDataBase</servlet-name>
+        <url-pattern>/CheckDataBase</url-pattern>
+    </servlet-mapping>
+ 
+            <servlet>
+        <servlet-name>cgs</servlet-name>
+        <servlet-class>cgs</servlet-class>
+      </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cgs</servlet-name>
+        <url-pattern>/cgs</url-pattern>
+    </servlet-mapping>
+
+         <servlet>
+        <servlet-name>InsertDataBaseGHS</servlet-name>
+        <servlet-class>InsertDataBaseGHS</servlet-class>
+       </servlet>
+
+       
+           <servlet-mapping>
+        <servlet-name>InsertDataBaseGHS</servlet-name>
+        <url-pattern>/InsertDataBaseGHS</url-pattern>
+      </servlet-mapping>  
+
+       <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>test</servlet-class>
+    </servlet>
+
+       
+           <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/test</url-pattern>
+      </servlet-mapping>  
+
+  <servlet>
+        <servlet-name>kitch</servlet-name>
+        <servlet-class>kitch</servlet-class>
+    </servlet>
+
+       
+           <servlet-mapping>
+        <servlet-name>kitch</servlet-name>
+        <url-pattern>/kitch</url-pattern>
+      </servlet-mapping>  
+
+           <servlet>          
+        <servlet-name>MainScreen</servlet-name>
+        <servlet-class>MainScreen</servlet-class>
+       </servlet>
+  
+       
+           <servlet-mapping>
+        <servlet-name>MainScreen</servlet-name>
+        <url-pattern>/MainScreen</url-pattern>
+       </servlet-mapping>  
+
+        <servlet>          
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
+      </servlet>
+ 
+       
+           <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+          </servlet-mapping>  
+ 
+
+
+	<servlet>          
+        <servlet-name>InsertYGCG</servlet-name>
+        <servlet-class>InsertYGCG</servlet-class>
+      </servlet>
+ 
+       
+           <servlet-mapping>
+        <servlet-name>InsertYGCG</servlet-name>
+        <url-pattern>/InsertYGCG</url-pattern>
+          </servlet-mapping>  
+
+          <servlet>          
+        <servlet-name>XiuGaiMiMa</servlet-name>
+        <servlet-class>XiuGaiMiMa</servlet-class>
+              </servlet>
+ 
+       
+           <servlet-mapping>
+        <servlet-name>XiuGaiMiMa</servlet-name>
+        <url-pattern>/XiuGaiMiMa</url-pattern>
+          </servlet-mapping>  
+
+        <servlet>          
+        <servlet-name>LiShi</servlet-name>
+        <servlet-class>LiShi</servlet-class>
+      </servlet>
+ 
+       
+               <servlet-mapping>
+         <servlet-name>LiShi</servlet-name>
+        <url-pattern>/LiShi</url-pattern>
+          </servlet-mapping>  
+
+         <servlet>          
+        <servlet-name>THLS</servlet-name>
+        <servlet-class>THLS</servlet-class>
+       </servlet>
+ 
+       
+           <servlet-mapping>
+         <servlet-name>THLS</servlet-name>
+        <url-pattern>/THLS</url-pattern>
+          </servlet-mapping>  
+  <listener>  
+        <listener-class>TimeListener</listener-class>  
+       </listener>  
+
+
+    <servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>Login</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>Login</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>login.LoginServlet</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>Login</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/Login</url-pattern>  
+    </servlet-mapping>
+	<!--²Ë¼Û²éÑ¯ºóÌ¨-->
+	<servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>VegetablePrice</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>VegetablePrice</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>VegetablePrice.VegetableServlet</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>VegetablePrice</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/VegetablePrice.do</url-pattern>  
+    </servlet-mapping>
+
+	<servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>Tablevalue</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>Tablevalue</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>VegetablePrice.TableValue.Tablevalue</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>Tablevalue</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/tablevalue.do</url-pattern>  
+    </servlet-mapping>
+
+
+	<servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>YongHuShang</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>YongHuShang</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>YongHuShang.AjaxServlert</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>YongHuShang</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/YongHuShang.do</url-pattern>  
+    </servlet-mapping>
+
+	<!--ÅäÖÃÒ¹Éó¶¨Ê±Æ÷-->
+	<listener> 
+		<listener-class>NightAudit.TimerNightAudit</listener-class> 
+	</listener>
+
+
+
+   	<servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>ChaXunTable</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>ChaXunTable</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>ShuliBiao.ChaXunTable</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>ChaXunTable</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/ChaXun.do</url-pattern>  
+    </servlet-mapping>
+
+	<servlet>  
+		<!--ÉÏ´«³ÌÐòÉèÖÃ-->
+        <display-name>SelectTable</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>SelectTable</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>ChaXunTable.SelectTable</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>SelectTable</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/ChaXunTable.do</url-pattern>  
+    </servlet-mapping>
+
+	<servlet>  
+	 <!--Éú³É±¨±í-->
+        <display-name>PDFUtil</display-name>
+        <!--¸øsurvletÆð¸öÃû×Ö£¬¿ÉÒÔÊÇÈÎÒâµÄ -->  
+        <servlet-name>PDFUtil</servlet-name>  
+        <!--servletµÄÂ·¾¶£¨°üÃû+ÀàÃû)-->  
+        <servlet-class>pdf.PDFUtil</servlet-class>  
+    </servlet>  
+  
+    <servlet-mapping>  
+        <servlet-name>PDFUtil</servlet-name>  
+        <!-- ÕâÊÇÔÚä¯ÀÀÆ÷ÖÐÊäÈëµÄ·ÃÎÊ¸ÃsurvletµÄurl£¬ÈÎÒâµÄ -->  
+        <url-pattern>/PDFUtil.do</url-pattern>  
+    </servlet-mapping>
+
+</web-app>
+
+
+ 

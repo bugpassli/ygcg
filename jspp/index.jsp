@@ -1,0 +1,138 @@
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html style="overflow-y:hidden;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<LINK rel="Bookmark" href="/favicon.ico" >
+<LINK rel="Shortcut Icon" href="/favicon.ico" />
+<link href="Content/css/H-ui.css" rel="stylesheet" type="text/css" />
+<link href="Content/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="Content/font/font-awesome.min.css"/>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/index.js"></script>
+<title>欢迎进入黄山学院采购平台</title>
+ <!--
+ <style type="text/css">
+	 body {
+		background-image:url(image/09.jpg);
+		width:100%;
+		height:100%;
+		background-size:100% 100%;
+	}
+</style>
+-->
+</head>
+<body style="overflow:hidden">
+
+<header class="Hui-header cl"> 
+	<a class="Hui-logo l"  href="/">欢迎使用黄山学院后勤集团阳光采购报价系统</a>
+    <a class="Hui-logo-m l" href="/" >欢迎使用黄山学院后勤集团阳光采购报价系统</a> 
+    <span class="Hui-subtitle l">V1.0</span> 
+    <span class="Hui-userbox"><span class="c-white">用户名：${username}</span> 
+    	<a class="btn btn-out radius ml-10" href="kitch.jsp" title="退出">
+    		<i class="icon-off"></i> 退出
+    	</a>
+    </span>
+    <a aria-hidden="false" class="Hui-nav-toggle" id="nav-toggle" href="#"></a>
+</header>
+
+<div class="cl Hui-main">
+  <aside class="Hui-aside" style="">
+    <input runat="server" id="divScrollValue" type="hidden" value="" />
+    <div class="menu_dropdown bk_2">
+	   <ul id = "accordion" class = "accordion" >
+			<li>
+				<div class="link"><i class="icon-sitemap"></i>菜价品种<i class="fa fa-chevron-down"></i></div>
+				<ul class="submenu"> 
+					<li>
+					  <a _href="VegetablePrice.do?username=${username}&ID=1" href="javascript:void(0)">粮 油 类</a>
+					</li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=2">猪 肉 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=3">冻 货 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=4">干货调味品</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=5">鸡 蛋 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=6">豆制品类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=7">蔬 菜 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=8">鲜 鱼 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=9">牛 肉 类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=10">奶制品类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=11">一次性用品类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=12">面制品类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=13">厨房用品类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=14">日用百货类</a></li>
+					<li><a _href="VegetablePrice.do?username=${username}&ID=15">活 禽 类</a></li>
+				</ul>
+		    </li>
+			<li>
+				<div class="link"><i class="icon-book"></i>历史查询<i class="fa fa-chevron-down"></i></div>
+				<ul class="submenu">
+				    <li><a _href="student.jsp?username=${username}">历史查询</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="link"><i class="icon-cogs"></i>查询订单<i class="fa fa-chevron-down"></i></div>
+				<ul class="submenu">
+				    <li><a _href="ChaXun.do?username=${username}">采购商订单</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="link"><i class="icon-key"></i>添加信息<i class="fa fa-chevron-down"></i></div>
+				<ul class="submenu">
+
+				    <li>
+                                       <a _href="/Online_E_System/student/student-add.jsp?username=${username}&ShiTang=${ShiTang}&UserName=${UserName}&Sex=${Sex}&NianLing=${NianLing}&ZhiWu=${ZhiWu}&CaiGouNianXian=${CaiGouNianXian}">采购商信息</a>
+                                     </li>
+				</ul>
+			</li>
+                        <li>
+				<div class="link"><i class="icon-key"></i>更改密码</a><i class="fa fa-chevron-down"></i>
+				</div>
+				<ul class="submenu">
+				   <li><a _href="xiugaimima.jsp?bz=${username}">采购商更改</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="link"><i class="icon-cogs"></i>退出系统<i class="fa fa-chevron-down"></i></div>
+				<ul class="submenu">
+				    <li><a href="kitch.jsp">采购商退出</a></li>
+				</ul>
+			</li>
+	   </ul>		
+    </div>
+  </aside>
+  <div class="dislpayArrow"><a class="pngfix" href="javascript:void(0);"></a></div>
+  <section class="Hui-article">
+    <div id="Hui-tabNav" class="Hui-tabNav">
+      <div class="Hui-tabNav-wp">
+        <ul id="min_title_list" class="acrossTab cl">
+          <li class="active"><span title="我的桌面" data-href="welcome1.jsp">我的桌面</span><em></em></li>
+        </ul>
+      </div>
+      <div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default btn-small" href="javascript:;"><i class="icon-step-backward"></i></a><a id="js-tabNav-next" class="btn radius btn-default btn-small" href="javascript:;"><i class="icon-step-forward"></i></a></div>
+    </div>
+    
+    <!-- iframe小型框架  -->
+    <div id="iframe_box" class="Hui-articlebox">
+      <div class="show_iframe">
+        <div style="display:none" class="loading"></div>
+        <iframe scrolling="yes" frameborder="0" src="welcome1.jsp"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+<script type="text/javascript" src="Content/js/jquery.min.js"></script>
+<script type="text/javascript" src="Content/js/Validform_v5.3.2_min.js"></script> 
+<script type="text/javascript" src="Content/layer/layer.min.js"></script>
+<script type="text/javascript" src="Content/js/H-ui.js"></script>
+<script type="text/javascript" src="Content/js/H-ui.admin.js"></script>
+
+</body>
+</html>

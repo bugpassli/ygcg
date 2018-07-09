@@ -1,0 +1,76 @@
+<%@page import="javax.xml.ws.Response"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="Content/css/login.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href="Content/font/font-awesome.min.css"/>
+
+<title>黄山学院阳光采购系统登录页面</title>
+</head>
+<body class="loginpage login_index">
+	<div class="loginbox">
+    	<div class="loginboxinner">
+        	
+            <div class="logo">
+            	<h1 class="logo">阳光采购<span>登录页面</span></h1>
+				<span class="slogan">黄山学院系统</span>
+            </div><!--logo-->
+            
+            <br clear="all" /><br />
+            
+            <div class="nousername">
+				<div class="loginmsg">密码不正确.</div>
+            </div><!--nousername-->
+            
+            <div class="nopassword">
+				<div class="loginmsg">密码不正确.</div>
+                <div class="loginf">
+                    <div class="thumb"><img alt="" src="Content/images/user.png" /></div>
+                    <div class="userlogged"> </div>
+                </div><!--loginf-->
+            </div><!--nopassword-->
+            
+            <form id="login" action="login.action" method="post">
+            	
+                <div class="username">
+                	<div class="usernameinner">
+                    	<input type="text" name="user.username" id="username" placeholder="用户名" />
+                    </div>
+                </div>
+                
+                <div class="password">
+                	<div class="passwordinner">
+                    	<input type="password" name="user.password" id="password" placeholder="密码" />
+                    </div>
+                </div>
+                <div class="keep" style="height:30px">
+                    <input type="checkbox" name="remember" style="margin-left:25px" id="remember"/>
+                    <label for="remember" >记住密码</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <input type="radio" id="manager" name="user.type" value="0"><label for="manager">管理员</label>
+                    <input type="radio" id="teacher" name="user.type" value="1"><label for="teacher">监督员</label>
+                    <input type="radio" id="student" checked="checked" name="user.type" value="2"><label for="student">采购员</label>
+                </div>
+                
+                <button type="submit">登录</button>   
+                <%
+                if(request.getAttribute("just")=="错误") 
+                  {                	 	
+                		response.getWriter().println("<script>alert('用户名、密码、用户身份有误！！！')</script>");
+                  }   
+                %>                                                    
+            </form>
+               
+        </div><!--loginboxinner-->
+    </div><!--loginbox-->
+       
+</body>
+</html>
+ <script type="text/javascript">
+     
+ </script>

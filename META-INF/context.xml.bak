@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+ <Resource name="jdbc/ewsdb1"
+         auth="Container"
+         driverClassName="com.mysql.jdbc.Driver"
+         type="javax.sql.DataSource"
+         url="jdbc:mysql://localhost:3306/hsuygcg?useSSL=false;useServerPrepStmts=false;rewriteBatchedStatements=true"
+         username="root"
+         password="183411"
+         maxActive="100" 
+         maxIdle="30"
+         maxWait="10000" />
+</Context>

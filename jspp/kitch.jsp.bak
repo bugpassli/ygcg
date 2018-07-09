@@ -1,0 +1,84 @@
+<%@ page language="java" contentType="text/html; charset=gb2312"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+   <title>登录界面</title>
+   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+   <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+#nav {
+	font-size:30px;
+    line-height:30px;
+    float:left;
+    padding:20px;
+	width:180px;
+	margin-top:10px; 
+	margin-left:280px;
+}
+#section {
+	line-height:10px;
+    width:500px;
+    float:left;
+    padding:20px;
+	left:2px; 
+	margin-top:10px;
+
+}
+  </style>
+<script>
+function myCheck()
+{
+	var x=document.getElementById("zh").value;
+	var y=document.getElementById("mm").value;
+	if(x=="")
+	{
+		window.alert("账号为空,请输入账号!");
+		return false;
+	}
+	if(y==""){
+		window.alert("密码为空,请输入密码!");
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body  >
+     <div  style="position:fixed; width:100%; height:100%; z-index:-1">    
+		<img src="images/gl.jpg" style="height:100%;width:100%;max-width:100%; max-height:100%; display: block;"/>    
+		</div>
+	<div class="container">
+	 
+		<div><p>&nbsp;</p><p>&nbsp;</p></div>
+		<div><p>&nbsp;</p><p>&nbsp;</p></div>
+		<div><p>&nbsp;</p><p>&nbsp;</p></div>
+		<div class="row">
+			<div class="col-md-4 column-sm-2" id="nav">
+					<p>用户名:</p>
+			</div>
+			<div  class="col-md-8 column-sm-4" id="section">
+				<input type="text" name="zh" class="form-control" form="form1" id="zh" autofocus style="width:90%; height:40px; background:rgba(255, 255, 255, 0.5);">&nbsp;
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 column-sm-2" id="nav">
+					<p>密码:</p>
+			</div>
+			<div  class="col-md-8 column-sm-4" id="section">
+				 <input type="password" name="pa"  class="form-control"  form="form1" id="mm" style="width:90%; height:40px;background:rgba(255, 255, 255, 0.5);">&nbsp;
+			</div>
+		</div>
+		
+		<div class="row" align="center"  >
+		</br></br></br>
+		<form action="CheckDataBase"  method="POST" id="form1" onsubmit="return myCheck()">
+			 <input type="submit"  onclick="myCheck()"  class="btn btn-info btn-lg "  value="登录" style="width:40%; background:rgba(160,160,240,0.8);" ></button>
+		</form>
+		</div>
+		</div>	
+	
+</body>
+</html>
